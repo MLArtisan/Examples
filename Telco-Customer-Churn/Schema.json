@@ -1,0 +1,121 @@
+{
+    "name": "Telco-Customer-Churn",
+    "schemaItems": [
+        {
+            "name": "gender",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "SeniorCitizen",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "Partner",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "Dependents",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "tenure",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "PhoneService",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "MultipleLines",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "InternetService",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "OnlineSecurity",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "OnlineBackup",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "DeviceProtection",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "TechSupport",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "StreamingTV",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "StreamingMovies",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "Contract",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 3
+        },
+        {
+            "name": "PaperlessBilling",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "PaymentMethod",
+            "valueTypeId": "NumberArray",
+            "typeId": "Feature",
+            "arrayLength": 4
+        },
+        {
+            "name": "MonthlyCharges",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "TotalCharges",
+            "valueTypeId": "Number",
+            "typeId": "Feature"
+        },
+        {
+            "name": "Churn",
+            "valueTypeId": "Number",
+            "typeId": "Target"
+        },
+        {
+            "name": "customerID",
+            "valueTypeId": "String",
+            "typeId": "Info"
+        }
+    ],
+    "description": "Predict behavior to retain customers."
+}

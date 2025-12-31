@@ -1,0 +1,16 @@
+{
+    "name": "Telco-Customer-Churn-Model-Test",
+    "schemaId": "019b695d-c107-772e-87d9-9d475e6a0ea3",
+    "modelTypeId": "NeuralNetwork",
+    "settings": {
+        "Metrics": [
+            "BinaryAccuracy",
+            "TruePositives",
+            "TrueNegatives",
+            "FalsePositives",
+            "FalseNegatives",
+            "Recall"
+        ]
+    },
+    "description": ""
+}
