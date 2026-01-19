@@ -1,121 +1,272 @@
 {
-    "name": "Telco-Customer-Churn",
-    "schemaItems": [
+  "name": "Telco-Customer-Churn",
+  "schemaItems": [
+    {
+      "name": "tenure",
+      "valueTypeId": "Number",
+      "typeId": "Feature"
+    },
+    {
+      "name": "SeniorCitizen",
+      "valueTypeId": "Number",
+      "typeId": "Feature"
+    },
+    {
+      "name": "TotalCharges",
+      "valueTypeId": "Number",
+      "typeId": "Feature"
+    },
+    {
+      "name": "MonthlyCharges",
+      "valueTypeId": "Number",
+      "typeId": "Feature"
+    },
+    {
+      "name": "customerID",
+      "valueTypeId": "String",
+      "typeId": "Info"
+    },
+    {
+      "name": "gender",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
         {
-            "name": "gender",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
+          "value": "male"
         },
         {
-            "name": "SeniorCitizen",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "Partner",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "Dependents",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "tenure",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "PhoneService",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "MultipleLines",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "InternetService",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "OnlineSecurity",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "OnlineBackup",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "DeviceProtection",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "TechSupport",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "StreamingTV",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "StreamingMovies",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "Contract",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 3
-        },
-        {
-            "name": "PaperlessBilling",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "PaymentMethod",
-            "valueTypeId": "NumberArray",
-            "typeId": "Feature",
-            "arrayLength": 4
-        },
-        {
-            "name": "MonthlyCharges",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "TotalCharges",
-            "valueTypeId": "Number",
-            "typeId": "Feature"
-        },
-        {
-            "name": "Churn",
-            "valueTypeId": "Number",
-            "typeId": "Target"
-        },
-        {
-            "name": "customerID",
-            "valueTypeId": "String",
-            "typeId": "Info"
+          "value": "female"
         }
-    ],
-    "description": "Predict behavior to retain customers."
+      ]
+    },
+    {
+      "name": "MultipleLines",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "no"
+        },
+        {
+          "value": "no phone service"
+        },
+        {
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "PhoneService",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "Partner",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "Dependents",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "no"
+        },
+        {
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "OnlineSecurity",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "no internet service"
+        },
+        {
+          "value": "no"
+        },
+        {
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "TechSupport",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        },
+        {
+          "value": "no internet service"
+        }
+      ]
+    },
+    {
+      "name": "StreamingTV",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        },
+        {
+          "value": "no internet service"
+        }
+      ]
+    },
+    {
+      "name": "OnlineBackup",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "no"
+        },
+        {
+          "value": "no internet service"
+        },
+        {
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "StreamingMovies",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        },
+        {
+          "value": "no internet service"
+        }
+      ]
+    },
+    {
+      "name": "PaperlessBilling",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "DeviceProtection",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "no internet service"
+        },
+        {
+          "value": "no"
+        },
+        {
+          "value": "yes"
+        }
+      ]
+    },
+    {
+      "name": "InternetService",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "dsl"
+        },
+        {
+          "value": "fiber optic"
+        },
+        {
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "PaymentMethod",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "electronic check"
+        },
+        {
+          "value": "bank transfer (automatic)"
+        },
+        {
+          "value": "mailed check"
+        },
+        {
+          "value": "credit card (automatic)"
+        }
+      ]
+    },
+    {
+      "name": "Churn",
+      "valueTypeId": "Category",
+      "typeId": "Target",
+      "categories": [
+        {
+          "value": "yes"
+        },
+        {
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "Contract",
+      "valueTypeId": "Category",
+      "typeId": "Feature",
+      "categories": [
+        {
+          "value": "month-to-month"
+        },
+        {
+          "value": "two year"
+        },
+        {
+          "value": "one year"
+        }
+      ]
+    }
+  ],
+  "description": ""
 }
